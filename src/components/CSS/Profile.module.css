@@ -1,0 +1,376 @@
+.container {
+    height: calc(100% - (10% + 10%));
+    box-sizing: border-box;
+    background: var(--somke-light-color-bg);
+    padding: 1rem 2rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transition: all 0.5s;
+}
+
+.taskdsCountWarpper {
+    width: 100%;
+    height: 11rem;
+    background: var(--light-color-bg);
+    box-shadow: 0px 2px 10px var(--shadow-color);
+    border-radius: 0.31rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.taskdsCountInnerWarpper {
+    width: 50%;
+    height: 100%;
+    border-left: 1px solid var(--gray-color);
+}
+
+.countDiv {
+    border-radius: 0.3rem;
+}
+
+.countDiv p,
+.countDiv h3 {
+    margin: 0;
+    text-align: start;
+}
+
+.countDiv h3 {
+    font-weight: 500;
+}
+
+.countDiv p {
+    font-size: 1rem;
+    line-height: 1.18rem;
+    color: var(--gray-color-txt);
+}
+
+.allTasks {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+}
+
+.allTasks h3 {
+    font-size: 2rem;
+    color: var(--dark-color-txt);
+}
+
+.DoneTasks {
+    height: 50%;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.DoneTasks h3 {
+    font-size: 1.5rem;
+    color: var(--dark-color-txt);
+}
+
+.notDontTasks {
+    height: 50%;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.notDontTasks h3 {
+    font-size: 1.5rem;
+    color: var(--dark-color-txt);
+}
+
+.secoundRow {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tasksCountPerGroupWarper {
+    width: 50%;
+    height: 11rem;
+    background: var(--light-color-bg);
+    box-shadow: 0px 2px 10px var(--shadow-color);
+    border-radius: 0.31rem;
+}
+
+.iStilDontKnow {
+    width: 50%;
+    height: 11rem;
+    background: var(--light-color-bg);
+    box-shadow: 0px 2px 10px var(--shadow-color);
+    border-radius: 0.31rem;
+}
+
+.optionsUl {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.optionsLi {
+    cursor: pointer;
+    width: 90%;
+    padding: 1rem 0rem;
+}
+
+.optionsLi span {
+    width: 100%;
+    display: block;
+    color: var(--dark-color-txt);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.optionsLi:hover span {
+    color: var(--error-color-txt);
+    transform: scale(1.1);
+}
+
+ul.optionsUl li.optionsLi:nth-child(2) {
+    border-top: 1px solid var(--gray-color);
+    border-bottom: 1px solid var(--gray-color);
+}
+
+.countPergropuDiv {
+    width: 10rem;
+    height: 6.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 0.31rem;
+    color: var(--light-color-txt);
+    font-size: 0.87rem;
+    line-height: 1rem;
+    padding-left: 1rem;
+}
+
+.countPergropuDiv h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+    text-align: start;
+    margin-bottom: 0.8rem;
+    color: var(--light-color-txt);
+}
+
+.countPergropuDiv span {
+    font-size: 1rem;
+    line-height: 1.18rem;
+    color: var(--light-gray-color-txt);
+    margin: 0;
+    text-align: start;
+}
+
+.statisticsWarper {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.CreditSpan {
+    display: block;
+    color: var(--gray-color-txt);
+    margin: 0.5rem;
+}
+
+.creditLinks {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.creditLinks a {
+    color: #3F51B5;
+    text-decoration: underline;
+}
+
+@media (max-width: 450px) {
+    .countDiv p {
+        font-size: 0.8rem;
+        line-height: 1.18rem;
+        color: var(--gray-color-txt);
+    }
+
+    .secoundRow {
+        flex-direction: column;
+    }
+
+    .tasksCountPerGroupWarper {
+        width: 100%;
+    }
+
+    .iStilDontKnow {
+        width: 100%;
+    }
+}
+
+.darkModeDiv {
+    width: 100%;
+    color: var(--dark-color-txt);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0.5rem 0rem;
+}
+
+.switch {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    display: block;
+    /* background: red; */
+
+    /* border-radius: 25px; */
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid;
+    border-color: white;
+    border-radius: 25px;
+}
+
+.slider::before {
+    content: '';
+    /* color: green; */
+    display: block;
+    /* text-align: end; */
+    line-height: 25px;
+    font-size: 90%;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    background: black;
+    transition: all 0.5s;
+}
+
+.slider::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s;
+    background: var(--third-color-txt);
+
+}
+
+.switchInput:checked+.slider::after {
+    left: 75%;
+}
+
+.switchInput:checked+.slider::before {
+    content: 'ON';
+    color: red;
+    text-align: start;
+    background: white;
+}
+
+.switchInput:checked+.slider {
+    border-color: black;
+}
+
+.switchInput {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+/* CSS for the dataExportDiv */
+.title {
+    font-size: 1rem;
+    color: var(--dark-color-txt);
+}
+
+.dataExportDiv {
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    background-color: var(--light-color-bg);
+    border-radius: 5px;
+    display: inline-block;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* CSS for the downloadDataBtn */
+.downloadDataBtn {
+    /* width: 100%; */
+    padding: 0.5rem 0.625rem;
+    font-size: 1rem;
+    color: var(--light-color-txt);
+    background-color: var(--third-color-bg);
+    border: none;
+    border-radius: 0.188rem;
+    cursor: pointer;
+}
+
+/* CSS for the fileInput */
+.fileInput {
+    margin-top: 10px;
+    display: none;
+    /* Hide the default input appearance */
+}
+
+.customFileInput {
+    /* width: 100%; */
+    padding: 0.5rem 0.625rem;
+    font-size: 1rem;
+    color: var(--light-color-txt);
+    background-color: var(--third-color-bg);
+    border: none;
+    border-radius: 0.188rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+
+/* Hide the input[type="file"] and style the label to resemble a button */
+.customFileInput input[type="file"] {
+    display: none;
+}
+
+/* Style the label text */
+.customFileInput label {
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}

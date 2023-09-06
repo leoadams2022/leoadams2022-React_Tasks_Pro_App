@@ -1,0 +1,90 @@
+.navContainer {
+    position: absolute;
+    bottom: 0px;
+    height: 10%;
+    width: 100%;
+    z-index: 99;
+}
+
+@media (min-width: 414px) {}
+
+.btnsWarper {
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary-color-bg);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btnDiv.active .btnSpan {
+    color: var(--light-color-txt);
+}
+
+.btnDiv {
+    width: 5rem;
+    padding-top: 0.063rem;
+}
+
+.btnDiv:hover a {
+    filter: brightness(10);
+}
+
+.btnImg {
+    cursor: pointer;
+    width: 100%;
+    max-height: 1.406rem;
+}
+
+.btnSpan {
+    display: block;
+    font-size: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    letter-spacing: 0.12px;
+    color: var(--gray-color-txt);
+    cursor: pointer;
+    margin-top: 0.031rem;
+}
+
+.addBtnDiv {
+    height: 100%;
+    position: relative;
+    flex-basis: 3.75rem;
+}
+
+.addBtnDivCer {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -1rem;
+    background: radial-gradient(98.92% 98.92% at 95.32% 45.48%, #F96060 0%, #F68888 100%), #F96060;
+    font-size: calc(1rem + 1.5rem);
+    line-height: 1.75rem;
+    text-align: center;
+    letter-spacing: 0.24px;
+    color: var(--light-color-txt);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.addBtnDivCer span {
+    transition: all 0.5s;
+}
+
+.addBtnDivCer:hover span {
+    transform: rotateZ(180Deg);
+}
+
+.dNone {
+    display: none;
+}

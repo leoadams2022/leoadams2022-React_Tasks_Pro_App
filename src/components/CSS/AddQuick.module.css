@@ -1,0 +1,115 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.errorParagraph {
+    color: var(--error-color-txt);
+    margin-bottom: 0.625rem;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+.errorParagraphVisibel {
+    background: var(--error-color-bg);
+}
+
+.AddQuickForm {
+    width: 100%;
+    padding: 0.625rem;
+}
+
+.formInput {
+    width: 90%;
+    padding: 0.313rem;
+    margin-bottom: 0.625rem;
+    font-size: 1rem;
+    border: 0.063rem solid var(--gray-color);
+    border-radius: 0.188rem;
+}
+
+.labelTag {
+    font-weight: bold;
+    text-align: start;
+    display: block;
+    margin-bottom: 0.313rem;
+}
+
+.inputDiv {
+    margin-bottom: 0.625rem;
+}
+
+.groupOption {
+    color: var(--light-color-txt);
+}
+
+.groupPickerDiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.groupOptionDiv {
+    width: 6rem;
+    height: 3rem;
+    border-radius: 0.31rem;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 1rem;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.groupOptionDiv.selected {
+    color: var(--light-color-txt);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px solid var(--dark-color);
+}
+
+.submitInput {
+    width: 100%;
+    padding: 0.5rem 0.625rem;
+    font-size: 1rem;
+    color: var(--light-color-txt);
+    background-color: var(--third-color-bg);
+    border: none;
+    border-radius: 0.188rem;
+    cursor: pointer;
+}
+
+.submitDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.updateInput {
+    width: 30%;
+    margin: 0.5rem 1rem;
+    padding: 0.5rem 0.625rem;
+    font-size: 1rem;
+    color: var(--light-color-txt);
+    background-color: var(--primary-color-bg);
+    border: none;
+    border-radius: 0.188rem;
+    cursor: pointer;
+}
+
+.cancelInput {
+    width: 30%;
+    margin: 0.5rem 1rem;
+    padding: 0.5rem 0.625rem;
+    font-size: 1rem;
+    color: var(--light-color-txt);
+    background-color: var(--secondary-color-bg);
+    border: none;
+    border-radius: 0.188rem;
+    cursor: pointer;
+}

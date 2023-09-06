@@ -1,0 +1,189 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+ * {
+   font-family: 'Roboto', sans-serif !important;
+ }
+
+ .App {
+   text-align: center;
+ }
+
+ .center {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   width: 100vw;
+
+ }
+
+ .appWarper {
+   --primary-color: #292E4E;
+
+   --secondary-color: #f33e4d;
+   --light-secondary-color: #f96060;
+
+   --third-color: #6074F9;
+
+   --light-color: white;
+   --somke-light-color: whitesmoke;
+
+   --dark-color: black;
+   --trans-dark-color: rgba(0, 0, 0, 0.5);
+
+   --gray-color: #9A9A9A;
+   --light-gray-color: #d8d8d8;
+
+   --error-color: red;
+
+   /* TxT ---------------------------------*/
+   --primary-color-txt: #292E4E;
+
+   --secondary-color-txt: #f33e4d;
+   --light-secondary-color-txt: #f96060;
+
+   --third-color-txt: #6074F9;
+
+   --light-color-txt: white;
+   --somke-light-color-txt: whitesmoke;
+
+   --dark-color-txt: black;
+   --trans-dark-color-txt: rgba(0, 0, 0, 0.5);
+
+   --gray-color-txt: #9A9A9A;
+   --light-gray-color-txt: #d8d8d8;
+
+   --error-color-txt: red;
+   /*--------------------------------- TxT */
+   /* BG ---------------------------------*/
+   --primary-color-bg: #292E4E;
+
+   --secondary-color-bg: #f33e4d;
+   --light-secondary-color-bg: #f96060;
+
+   --third-color-bg: #6074F9;
+
+   --light-color-bg: white;
+   --somke-light-color-bg: whitesmoke;
+
+   --dark-color-bg: black;
+   --trans-dark-color-bg: rgba(0, 0, 0, 0.5);
+
+   --gray-color-bg: #9A9A9A;
+   --light-gray-color-bg: #d8d8d8;
+   --error-color-bg: none;
+   /*--------------------------------- BG */
+
+   --shadow-color: rgba(227, 227, 227, 0.5);
+   --strong-shadow-color: rgba(0, 0, 0, 0.4);
+
+
+   width: auto;
+   height: 100vh;
+   margin: 0 auto;
+
+   box-sizing: border-box;
+   text-align: center;
+   position: relative;
+   overflow: hidden;
+ }
+
+ .appWarper.darkMode {
+   --primary-color: #292E4E;
+
+   --secondary-color: #f33e4d;
+   --light-secondary-color: #f96060;
+
+   --third-color: #6074F9;
+
+   --light-color: white;
+   --somke-light-color: whitesmoke;
+
+   --dark-color: black;
+   --trans-dark-color: rgba(0, 0, 0, 0.5);
+
+   --gray-color: #9A9A9A;
+   --light-gray-color: #d8d8d8;
+
+   --error-color: red;
+
+   /* TxT ---------------------------------*/
+   --primary-color-txt: #292E4E;
+
+   --secondary-color-txt: #f33e4d;
+   --light-secondary-color-txt: #f96060;
+
+   --third-color-txt: #6074F9;
+
+   --light-color-txt: white;
+   --somke-light-color-txt: whitesmoke;
+
+   --dark-color-txt: rgb(255, 255, 255);
+   --trans-dark-color-txt: rgba(0, 0, 0, 0.5);
+
+   --gray-color-txt: #c4c4c4;
+   --light-gray-color-txt: #d8d8d8;
+
+   --error-color-txt: red;
+   /*--------------------------------- TxT */
+   /* BG ---------------------------------*/
+   --primary-color-bg: #1d2036;
+
+   --secondary-color-bg: #f33e4d;
+   --light-secondary-color-bg: #c75252;
+
+   --third-color-bg: #6074F9;
+
+   --light-color-bg: rgb(80, 80, 80);
+   --somke-light-color-bg: rgb(43, 43, 43);
+
+   --dark-color-bg: black;
+   --trans-dark-color-bg: rgba(0, 0, 0, 0.5);
+
+   --gray-color-bg: #9A9A9A;
+   --light-gray-color-bg: #d8d8d8;
+   --error-color-bg: black;
+   /*--------------------------------- BG */
+
+   --shadow-color: rgba(227, 227, 227, 0);
+   --strong-shadow-color: rgba(0, 0, 0, 0);
+
+ }
+
+ /* and (max-width: 767.98px) */
+ @media (min-width: 576px) {
+
+   /* Your CSS styles for Small (sm) screens */
+   .appWarper {
+     width: 570px;
+     height: 94vh;
+     border: 1px solid white;
+
+   }
+ }
+
+ /* Fro Big Secreens  */
+ /* @media (min-width: 414px) {
+   .appWarper {
+     width: auto;
+     height: 98vh;
+   }
+ } */
+
+ /* @media (max-width: 600px) {
+   .appWarper {
+     width: 100vw;
+     height: 90vh; */
+ /* Use 100vw for small screens */
+ /* height: 100vh; */
+ /* min-height: 896px; */
+ /* Make height auto to adjust content height */
+ /* }
+ } */
+
+ a {
+   text-decoration: none;
+   color: initial;
+   padding: 0;
+   margin: 0;
+ }

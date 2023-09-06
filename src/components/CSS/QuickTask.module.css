@@ -1,0 +1,86 @@
+.quickTaskDiv {
+    width: 90%;
+    margin: 0.5rem auto;
+    height: 5.6rem;
+    box-sizing: border-box;
+    position: relative;
+    padding: 1rem 2rem;
+    background: var(--light-color-bg);
+    box-shadow: 5px 5px 9px var(--shadow-color);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.quickTaskDiv:hover {
+    filter: drop-shadow(1px 3px 4px var(--strong-shadow-color));
+}
+
+.quickTaskColorDiv {
+    position: absolute;
+    top: 0px;
+    left: 10%;
+    width: 15%;
+    height: 0.25rem;
+}
+
+.quickTaskP {
+    margin: 0px;
+    margin-bottom: 0.5rem;
+    text-align: start;
+    user-select: none;
+    font-size: 1rem;
+    line-height: 1.19rem;
+    color: var(--dark-color-txt);
+    max-height: 3.57rem;
+    overflow: hidden;
+    padding-right: 1.25rem;
+    text-align: start;
+    font-weight: 600;
+}
+
+.optionsDiv {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.optionsDiv.showOp {
+    opacity: 1;
+}
+
+.optionDiv {
+    width: 1rem;
+    height: 1rem;
+    background: var(--light-color-bg);
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: -3px 8px 10px var(--shadow-color);
+    display: none;
+}
+
+.optionDiv.showOp {
+    display: initial;
+}
+
+.optionDiv img {
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.optionDiv img:hover {
+    transform: scale(1.3);
+}

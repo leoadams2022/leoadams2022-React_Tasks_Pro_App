@@ -1,0 +1,133 @@
+.outerCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+
+.btnCont {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.btnCont.prev {
+    left: 10px;
+}
+
+.btnCont.next {
+    right: 10px;
+}
+
+button.btn {
+    background: var(--trans-dark-color-bg);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: var(--light-color-txt);
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.imgsWarper {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.slideDiv {
+    flex: 0 0 0%;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.slideDiv>.titleDiv,
+.slideDiv>.textDiv {
+    display: none;
+    transition: all 0.5;
+}
+
+.slideDiv.active>.titleDiv,
+.slideDiv.active>.textDiv {
+    display: initial;
+}
+
+.slideDiv.active {
+    flex: 0 0 100%;
+    opacity: 1;
+}
+
+.imgDiv {
+    width: 80%;
+    height: 50%;
+    margin: 12% auto;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.titleDiv {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--dark-color-txt);
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+.textDiv {
+    position: absolute;
+    bottom: 23%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--dark-color-txt);
+}
+
+.dotsDiv {
+    width: 50%;
+    height: 20px;
+    position: absolute;
+    bottom: 17%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background: var(--gray-color-bg);
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: 0px 4px 0px 4px;
+    cursor: pointer;
+}
+
+.activeDot {
+    background: var(--dark-color-bg);
+}
+
+.innerTextSpan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

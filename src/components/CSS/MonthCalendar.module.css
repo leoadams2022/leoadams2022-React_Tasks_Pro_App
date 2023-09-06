@@ -1,0 +1,153 @@
+.wrapper {
+    background: var(--light-color-bg);
+    border-radius: 0.625rem;
+    box-shadow: 0 0.938rem 2.5rem var(--shadow-color);
+    margin-bottom: 1rem;
+}
+
+.wrapper header {
+    display: flex;
+    align-items: center;
+    padding: 0px 1.438rem 0px;
+    justify-content: space-between;
+}
+
+.wrapper header p {
+    font-size: 1.5rem;
+    color: var(--dark-color-txt);
+}
+
+header .icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 2.5rem;
+}
+
+header .icons span {
+    height: 1.25rem;
+    width: 1.25rem;
+    margin: 0 0.063rem;
+    cursor: pointer;
+    background: var(--light-gray-color-bg);
+    text-align: center;
+    user-select: none;
+    border-radius: 50%;
+}
+
+header .icons span img {
+    width: 100%;
+}
+
+.icons span:last-child {
+    margin-right: -0.625rem;
+}
+
+header .icons span:hover {
+    background: var(--light-color-bg);
+}
+
+header .current-date {
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+
+.calendar {
+    padding-bottom: 1.25rem;
+}
+
+.calendar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+}
+
+.calendar .days {
+    margin-bottom: 1.25rem;
+}
+
+.calendar li {
+    color: var(--dark-color-txt);
+    width: calc(100% / 7);
+    font-size: 1rem;
+}
+
+.calendar .weeks li {
+    font-weight: 400;
+    cursor: default;
+    color: var(--gray-color-txt);
+}
+
+.calendar .days li {
+    z-index: 1;
+    cursor: pointer;
+    position: relative;
+    margin-top: 1.875rem;
+}
+
+.days li.inactive {
+    color: var(--gray-color-txt);
+}
+
+.days li.active {
+    color: var(--light-color-txt);
+}
+
+.days li::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.days li.active::before {
+    background: var(--gray-color-bg);
+}
+
+.days li::after {
+    content: '';
+    display: block;
+    width: 0.313rem;
+    height: 0.313rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -0.625rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.days li.activeTask::after {
+    background: var(--light-secondary-color-bg);
+}
+
+.days li:not(.active):hover::before {
+    background: var(--gray-color-bg);
+}
+
+
+.days li:not(.active):hover {
+    color: var(--light-color-txt);
+}
+
+/* Media query to target touch devices */
+@media (hover: none) {
+
+    /* Styles for touch devices where hover doesn't apply */
+    .days li:not(.active):hover::before {
+        background: none;
+    }
+
+
+    .days li:not(.active):hover {
+        color: initial;
+    }
+}
