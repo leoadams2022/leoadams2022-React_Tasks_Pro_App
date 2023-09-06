@@ -3,7 +3,7 @@
   "name": "Tasks Pro",
   "icons": [
     {
-      "src": "/toDoList.png",
+      "src": "./toDoList.png",
       "sizes": "512x512",
       "type": "image/png"
     }
